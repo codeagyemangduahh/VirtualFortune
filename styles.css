@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.sessions {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#quoteDisplay {
+  margin-top: 40px;
+  padding: 40px;
+  font-size: 54px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.social-share {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-share button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #55acee; /* Twitter color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-share button:nth-child(2) {
+  background-color: #bc2a8d; /* Instagram color */
+}
+
+.social-share button:last-child {
+  background-color: #3b5998; /* Facebook color */
+}
+
+.social-share button:hover {
+  background-color: #007bb5; /* Twitter hover color */
+}
+
+.social-share button:nth-child(2):hover {
+  background-color: #e4405f; /* Instagram hover color */
+}
+
+.social-share button:last-child:hover {
+  background-color: #4c69ba; /* Facebook hover color */
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  button {
+    font-size: 14px;
+  }
+
+  #quoteDisplay {
+    font-size: 16px;
+  }
+
+  .social-share button {
+    font-size: 14px;
+  }
+}
